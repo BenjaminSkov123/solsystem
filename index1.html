@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    
+    <ul class="solarsystem">
+        <li class="sun"><a href="#sun" onclick="togglePopup('sun')"><span>Sun</span></a></li>
+        <li class="mercury"><a href="#mercury" onclick="togglePopup('mercury')"><span>Mercury</span></a></li>
+        <li class="venus"><a href="#venus" onclick="togglePopup('venus')"><span>Venus</span></a></li>
+        <li class="earth"><a href="#earth" onclick="togglePopup('earth')"><span>Earth &amp; Moon</span></a></li>
+        <li class="mars"><a href="#mars" onclick="togglePopup('mars')"><span>Mars</span></a></li>
+        <li class="asteroids_meteorids"><a href="#asteroids_meteorids" onclick="togglePopup('asteroids_meteorids')"><span>Asteroids &amp; Meteorids</span></a></li>
+        <li class="jupiter"><a href="#jupiter" onclick="togglePopup('jupiter')"><span>Jupiter</span></a></li>
+        <li class="saturn"><a href="#saturn" onclick="togglePopup('saturn')"><span>Saturn &amp; Ring</span></a></li>
+        <li class="uranus"><a href="#uranus" onclick="togglePopup('uranus')"><span>Uranus</span></a></li>
+        <li class="neptune"><a href="#neptune" onclick="togglePopup('neptune')"><span>Neptune</span></a></li>
+        <li class="pluto"><a href="#pluto" onclick="togglePopup('pluto')"><span>Pluto</span></a></li>
+    </ul>
+    <canvas id="canvas"></canvas>
+    
+
+
+    <div class="container">
+        <img src="star.png" class="star" alt="Random Sound Image" onclick="playRandomSound()">
+      </div>
+    
+      <!-- Audio elements for playing sounds -->
+      <audio id="audio1" src="Stjerner kommer i forskellige farver og størrelser, ligesom farverige prikker på en magisk himmel!.mp3"></audio>
+      <audio id="audio2" src="Stjerner starter som små klumper i skyer af gas og støv kaldet .mp3"></audio>
+      <audio id="audio3" src="Planeter som Jorden har små venner kaldet måner, der kredser omkring dem i rummet..mp3"></audio>
+      <audio id="audio4" src="Sorte huller er steder i rummet, hvor tyngdekraften er så stærk, at endda lys ikke kan undslippe dem.mp3"></audio>
+      <audio id="audio5" src="Universet vokser konstant, hvilket betyder, at stjerner og planeter bliver længere og længere væk fra hinanden.mp3"></audio>
+    
+       <!-- Pop-ups -->
+    <div id="sun-popup" class="popup">
+        <span class="close" onclick="togglePopup('sun')">X</span>
+        
+    </div>
+    <div id="mercury-popup" class="popup">
+        <span class="close" onclick="togglePopup('mercury')">X</span>
+        Mercury Pop-up Content
+    </div>
+    <div id="venus-popup" class="popup">
+        <span class="close" onclick="togglePopup('venus')">X</span>
+        Venus Pop-up Content
+    </div>
+    <div id="earth-popup" class="popup">
+        <span class="close" onclick="togglePopup('earth')">X</span>
+        Earth & Moon Pop-up Content
+    </div>
+    <div id="mars-popup" class="popup">
+        <span class="close" onclick="togglePopup('mars')">X</span>
+    </head>
+    <body>
+        <header style="color: #743A3B; background-color: #FCF3EC;">MARS 
+        <img src="star.png" alt="Your Image" style="position: absolute; top: 25px; right: 25px; height: 100px; width: 100px;">
+    </header>
+        <main>
+    
+            <div class="forbilledemars">
+                <div><p class="aar"> 1 ÅR <br> 687 <br>dage</p></div>
+                <div><p class="dag"> <br>1 dag <br>24T <br>37min <br>22sec</p></div>
+            </div>
+    
+            <div class="section1">
+                <div><p class="temp2">temperatur <br>+20c / -140c</p></div>
+                <div class="vertical"></div>
+                <div ><p class="måne2">2 måner</p></div>
+            </div>
+    
+            <div class="mars1">
+            <div ><p class="carbon">95% <br> carbondioxide</p></div>
+        </div>
+        <div class="kmafstand">
+            <div class="kmogafstand"><p class="afstand">Mars afstand til solen <br>228.000.000km <div class="verticalkm"></div><p class="jorden">Jordens afstand <br>til solen<br> 149.600.000km</br></p></p></div>
+        
+        </div>
+    
+        <div class="textkm">
+            <div><p class="tusind">1.000.000+</p></div>
+            <div class="verticalmm">
+            <div class="verticaltekst"></div>
+            <div><p class="vandmm">MM^3 vand</p></div>
+        </div>
+        </div>
+    
+            <div class="min"><p class="textmin">jorden <br> 21 <br>minutter</p></div>
+    
+            <div class="atmosfære">
+            <div><p class="tien">1/10</p></div>
+            <div><p class="trykatmos">atmosfærisk tryk</p></div>
+        </div>
+        </main>
+    </div>
+    <div id="asteroids_meteorids-popup" class="popup">
+        <span class="close" onclick="togglePopup('asteroids_meteorids')">X</span>
+        Asteroids & Meteorids Pop-up Content
+    </div>
+    <div id="jupiter-popup" class="popup">
+        <span class="close" onclick="togglePopup('jupiter')">X</span>
+        
+    <header style="color: #795040; background-color: #FBF2EE;">Jupiter</header>
+    <main>
+
+    <div class="jupiter_forbillede">
+        <div class="jupiter_tid">
+        <div class="jupiter_one_year"><p>11 år <br> 10 mdr <br>2 uger <br>4 dage </p></div>
+        <div class="dag1"><p>9T<br> 56 minutter<br> 22 sek</p></div>
+        </div>
+    </div>
+    
+
+    <div class="jupiter_kassetext">
+        <div class="jupiter_kasse"> <p class="jupiter_kasse1text">Jupitur 1 dag <br>1 år</p></div>
+        <div><p class="jupiter_text"> Jupiter bruger cirka 11,86 jord år på at lave en hel omgang om Solen. En dag på Jupiter, som vi kalder en "jupiterdag," varer kun cirka 10 timer.</p></div>
+    </div>
+
+
+    <div class="jupiter_surface1text">
+        <div class="jupiter_omkredsgrad">
+       <div class="Omkreds"> <p> Dags Temp <br> -110<br></p></div>
+        <div class="grader"><p> Nat Temp <br> -145 </p></div>
+    </div>
+    
+    </div>
+
+    <div class="jupiter_kassetext">
+        <div class="jupiter_kasse"> <p class="jupiter_kasse1text">jupitur vejr</p></div>
+        <div><p class="jupiter_text">Jupiters vejr er vildt med store storme, lyn og skyer. Den store røde plet, er en gigantisk storm, som har eksisteret i århundreder. Jupiter har også lyn, som er meget kraftigere end dem på Jorden,</p></div>
+    </div>
+
+    <div class="jupiter_surface2text">
+        <div class="atmos"><p>90% <br> Hydrogen</p></div>
+    </div>
+
+    <div class="jupiter_kassetext">
+    <div class="jupiter_kasse"> <p class="jupiter_kasse1text">jupiturs atmosfære</p></div>
+    <div><p class="jupiter_text">Jupiter er omgivet af en stor sky, ligesom en kæmpe snemand. Den sky er Jupiters atmosfære. Den består mest af to ting, hydrogen og helium, som du måske har hørt om før. Disse to ting fylder hele himlen på Jupiter og får den til at se ud som en stor farverig bold. </p></div>
+</div>
+
+    <div class="surface3text">
+        <div class="forskel">
+        <p >53 <br>minutter</p></div>
+    </div>
+
+    <div class="jupiter_kassetext">
+        <div class="jupiter_kasse"> <p class="jupiter_kasse1text">modtagning af opkald </p></div>
+        <div><p class="jupiter_text">At kommunikere mellem Jorden og Jupiter er svært på grund af den enorme afstand imellem dem. Det tager omkring 53 minutter for en besked at rejse fra den ene planet til den anden. Det kræver avanceret teknologi og planlægning for at sikre pålidelig kommunikation</div>
+
+    </main>
+</div>
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+        
+    </div>
+    <div id="saturn-popup" class="popup">
+        <span class="close" onclick="togglePopup('saturn')">X</span>
+        Saturn & Ring Pop-up Content
+    </div>
+    <div id="uranus-popup" class="popup">
+        <span class="close" onclick="togglePopup('uranus')">X</span>
+        Uranus Pop-up Content
+    </div>
+    <div id="neptune-popup" class="popup">
+        <span class="close" onclick="togglePopup('neptune')">X</span>
+        <header style="background-color: #DFEAEB;">Neptun <img src="star.png" alt="Your Image" style="position: absolute; top: 25px; right: 25px; height: 100px; width: 100px;">
+        </header>
+        <main>
+            <div class="forbillede">
+                <div class="tid">
+                    <div class="one_year"><p>1 År på Jorden er<br> <br> 164.8 ÅR på Neptun </p></div>
+                    <div class="dag1"><p>24T på jorden er<br><br> 16T 6min på neptun</p></div>
+                </div>
+            </div>
+            <div class="surface1text">
+                <div class="omkredsgrad">
+               <div class="Omkreds"> <p> neptuns Omkreds er <br> 155.600.00 km<br> jorden er 40.075km</b></p></div>
+                <div class="grader"><p> Neptun er -218 grader <br> hvor jorden er <br>ca.  13-15 grader</p></div>
+            </div>
+            
+            </div>
+        
+            <div class="kassetext">
+                <div class="kasse"> <p class="kasse1text">Hvorfor er det Koldt på neptun?</p></div>
+                <div><p class="text">Neptun er ekstremt langt væk fra Solen, hvilket resulterer i begrænset sollys og varme på planetens overflade.</p></div>
+            </div>
+        
+            <div class="surface2text">
+                <div class="maaner"><p>neptun har 14 måner <br> Den største måne er triton <br> som drejer modsat <br> retning af Neptun</p></div>
+            </div>
+        
+            <div class="kassetext">
+            <div class="kasse"> <p class="kasse1text">den største måne - Triton</p></div>
+            <div><p class="text">Tritons modsatte retning af Neptuns rotation er sandsynligvis resultatet af en tidligere kollision eller nærpassering med en anden stor måne eller objekt som fik den til at rotere i modsat retning.</p></div>
+        </div>
+        
+            <div class="surface3text">
+                <div class="atmos">
+                <p >atmosfæren på netun <br>består af <br> 80% hydrogen, 19% helium & <br>1.9% metan</p></div>
+            </div>
+        
+            <div class="kassetext">
+                <div class="kasse"> <p class="kasse1text">neptuns Vejr</p></div>
+                <div><p class="text">Neptuns vejr er vildt med meget stærke vinde, store storme og virkelig koldt vejr. Planeten oplever også forskelligt vejr afhængigt af, hvor den er i sin rejse omkring Solen. </p></div>
+            </div>
+        </main>
+    </div>
+    <div id="pluto-popup" class="popup">
+        <span class="close" onclick="togglePopup('pluto')">X</span>
+        Pluto Pop-up Content
+    </div>
+    
+      
+    <script src="script.js"></script>
+
+</body>
+</html>
