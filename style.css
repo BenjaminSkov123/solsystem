@@ -1,0 +1,1077 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
+
+body {
+   
+    background: #080e24 url(http://neography.com/experiment/circles/solarsystem/bg.jpg) repeat;
+    color: #626668;
+    overflow: hidden ;
+}
+
+
+
+
+.solarsystem{
+    align-items: center;
+    
+}
+
+/* Solar System Styles */
+ul.solarsystem {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 18%;
+    height: 640px;
+    list-style: none;
+    -webkit-transition: all 0.09s ease-in;
+    -moz-transition: all 0.09s ease-in;
+    -o-transition: all 0.09s ease-in;
+    transition: all 0.09s ease-in;
+    overflow: hidden;
+
+}
+ul.solarsystem li {
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    border: 2px solid #394057;
+/*    opacity: 0.7;*/
+}
+ul.solarsystem li span {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+ul.solarsystem li.active {
+    border-color: #aa4200;
+}
+ul.solarsystem li.active.sun,
+ul.solarsystem li.active span {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+ul.solarsystem li.active.sun span,
+ul.solarsystem li.active.earth .moon {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+ul.solarsystem li.sun {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fc3;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.22, rgb(204,153,0)),
+        color-stop(1, rgb(255,219,112))
+    );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        rgb(204,153,0) 22%,
+        rgb(255,219,112) 100%
+    );
+    top: 302px;
+    left: 462px;
+    border: none;
+    -webkit-box-shadow: 0 0 50px #c90;
+    -moz-box-shadow: 0 0 50px #c90;
+    box-shadow: 0 0 50px #c90;
+    z-index: 100;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+ul.solarsystem li.sun span {
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;   
+}
+ul.solarsystem li.mercury {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 52px;
+    -moz-border-radius: 52px;
+    border-radius: 52px;
+    top: 270px;
+    left: 430px;
+    z-index: 99;
+}
+ul.solarsystem li.mercury span {
+    background: #b6bac5;
+    top: 10px;
+    left: 10px;
+}
+ul.solarsystem li.venus {
+    width: 160px;
+    height: 160px;
+    -webkit-border-radius: 82px;
+    -moz-border-radius: 82px;
+    border-radius: 82px;
+    top: 240px;
+    left: 400px;
+    z-index: 98;
+}
+ul.solarsystem li.venus span {
+    background: #bf8639;
+    top: 118px;
+    left: 5px;
+}
+ul.solarsystem li.earth {
+    width: 220px;
+    height: 220px;
+    -webkit-border-radius: 112px;
+    -moz-border-radius: 112px;
+    border-radius: 112px;
+    top: 210px;
+    left: 370px;
+    z-index: 97;
+}
+ul.solarsystem li.earth span {
+    background: #06c;
+    top: 56px;
+    left: 5px;
+}
+ul.solarsystem li.earth span.moon {
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #ccc;
+    top: 12px;
+    left: 12px;
+}
+ul.solarsystem li.mars {
+    width: 280px;
+    height: 280px;
+    -webkit-border-radius: 142px;
+    -moz-border-radius: 142px;
+    border-radius: 142px;
+    top: 180px;
+    left: 340px;
+    z-index: 96;
+}
+ul.solarsystem li.mars span {
+    background: #aa4200;
+    top: 0px;
+    left: 175px;
+}
+ul.solarsystem li.asteroids_meteorids {
+    top: 155px;
+    left: 315px;
+    z-index: 1;
+    background: url(http://neography.com/experiment/circles/solarsystem/asteroids_meteorids.png) no-repeat 0 0;
+    width: 330px;
+    height: 330px;
+    -webkit-border-radius: 165px;
+    -moz-border-radius: 165px;
+    border-radius: 165px;
+    border: none;
+}
+ul.solarsystem li.jupiter {
+    width: 340px;
+    height: 340px;
+    -webkit-border-radius: 172px;
+    -moz-border-radius: 172px;
+    border-radius: 172px;
+    top: 150px;
+    left: 310px;
+    z-index: 95;
+}
+ul.solarsystem li.jupiter span {
+    background: #e0ae6f;
+    top: 67px;
+    left: 24px;
+}
+ul.solarsystem li.saturn {
+    width: 400px;
+    height: 400px;
+    -webkit-border-radius: 202px;
+    -moz-border-radius: 202px;
+    border-radius: 202px;
+    top: 120px;
+    left: 280px;
+    z-index: 94;
+}
+ul.solarsystem li.saturn span {
+    background: #dfd3a9;
+    top: 24px;
+    left: 300px;
+}
+ul.solarsystem li.saturn span.ring {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: none;
+    border: 2px solid #5a4e34;
+    left: -3px;
+    top: -3px;
+    -webkit-transform: skewY(50deg);
+    -moz-transform: skewY(50deg);
+    -o-transform: skewY(50deg);
+    transform: skewY(50deg);
+}
+ul.solarsystem li.uranus {
+    width: 460px;
+    height: 460px;
+    -webkit-border-radius: 232px;
+    -moz-border-radius: 232px;
+    border-radius: 232px;
+    top: 90px;
+    left: 250px;
+    z-index: 93;
+}
+ul.solarsystem li.uranus span {
+    background: #82b3d1;
+    top: 7px;
+    left: 300px;
+}
+ul.solarsystem li.neptune {
+    width: 520px;
+    height: 520px;
+    -webkit-border-radius: 262px;
+    -moz-border-radius: 262px;
+    border-radius: 262px;
+    top: 60px;
+    left: 220px;
+    z-index: 92;
+}
+ul.solarsystem li.neptune span {
+    background: #77c2ec;
+    top: 0px;
+    left: 200px;
+}
+ul.solarsystem li.pluto {
+    width: 580px;
+    height: 580px;
+    -webkit-border-radius: 292px;
+    -moz-border-radius: 292px;
+    border-radius: 292px;
+    top: 30px;
+    left: 190px;
+    z-index: 91;
+}
+ul.solarsystem li.pluto span {
+    background: #7c6a5c;
+    top: 79px;
+    left: 79px;
+}
+
+ul#descriptions {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    list-style: none;
+}
+ul#descriptions h2 {
+    cursor: pointer;
+    color: #386077;
+    -webkit-transition: all 0.15s ease-in;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+    font-size: 20px;
+    position: relative;
+    z-index: 101;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  margin-bottom: -15px;
+}
+ul#descriptions h2:hover {
+   color: #aa4200; 
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+}
+ul#descriptions li p {
+    position: absolute;
+    left: -250px;
+    top: 0;
+    width: 200px;
+    display: inline;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 13px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    background: #0f132c;
+    padding: 30px;
+    color: #767892;
+    line-height: 1.7;
+    z-index: 100;
+    border: 1px solid #1c203c;
+}
+ul#descriptions h2:hover+p {
+    visibility: visible;
+    opacity: 0.9;
+    left: -280px;
+}
+
+/* CSS3 Animations */
+
+
+/*ul.solarsystem:hover li {-webkit-animation-play-state: paused;} */
+
+
+
+
+
+ul#descriptions h2:hover+p {
+    visibility: visible;
+    opacity: 0.9;
+    left: -280px;
+}
+
+/* CSS3 Animations */
+ul.solarsystem li {
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:orbit;
+}
+ul.solarsystem li.earth span {
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:moon;
+    
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    -moz-animation-name:moon;
+}
+ul.solarsystem li.mercury {-webkit-animation-duration:5s; -moz-animation-duration:5s;}
+ul.solarsystem li.venus {-webkit-animation-duration:8s; -moz-animation-duration:8s;}
+ul.solarsystem li.earth {-webkit-animation-duration:12s; -moz-animation-duration:12s;}
+ul.solarsystem li.earth span {-webkit-animation-duration:2s; -moz-animation-duration:2s;}
+ul.solarsystem li.mars {-webkit-animation-duration:20s; -moz-animation-duration:20s;}
+ul.solarsystem li.asteroids_meteorids {-webkit-animation-duration:50s; -moz-animation-duration:50s;}
+ul.solarsystem li.jupiter {-webkit-animation-duration:30s; -moz-animation-duration:30s;}
+ul.solarsystem li.saturn {-webkit-animation-duration:60s; -moz-animation-duration:60s;}
+ul.solarsystem li.uranus {-webkit-animation-duration:70s; -moz-animation-duration:70s;}
+ul.solarsystem li.neptune {-webkit-animation-duration:100s; -moz-animation-duration:100s;}
+ul.solarsystem li.pluto {-webkit-animation-duration:120s; -moz-animation-duration:120s;}
+
+@-webkit-keyframes orbit { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
+@-webkit-keyframes moon { from { -webkit-transform:rotate(0deg) } to { -webkit-transform:rotate(360deg) } }
+
+@-moz-keyframes orbit { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
+@-moz-keyframes moon { from { -moz-transform:rotate(0deg) } to { -moz-transform:rotate(360deg) } }
+
+/*ul.solarsystem:hover li {-webkit-animation-play-state: paused;} */
+
+
+
+
+
+
+/* Pop Up */ 
+
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 700px;
+    width: 1300px;
+    transform: translate(-50%, -50%);
+    background-color: #dfeaeb00;
+    border: 1px solid #000000;
+    padding: 20px;
+    z-index: 1000;
+    max-height: 80%;
+    overflow: auto; /* Enable scrolling */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Styling for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Styling for the button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff00;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+}
+
+button:hover {
+    transform: scale(1.1); /* Scale up by 10% */
+}
+
+/* Styling for the close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px; /* Adjust font size */
+    cursor: pointer;
+}
+
+
+
+/*   pop style */
+
+header {
+    font-size: 96px;
+    font-family: abhaya libre extrabold;
+    text-align: center;
+    color: #485B72;
+   border-top: #33596f 3px solid;
+   background-color: #ffffff;
+}
+
+p {
+    font-family: Julius sans one;
+    color: #ffffff;
+    z-index: 1;
+    font-size: x-large;
+}
+
+/*-her starter tid, år og neptun billede 2-*/
+
+.neptun {
+    width: 100%;
+    height: auto;
+}
+
+.forbillede {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+
+.tid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content:space-around;
+    background-image: url('neptun1billede.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    align-items: center;
+    }
+
+.one_year {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+/*-her slutter tid, år og neptun billede 2-*/
+
+/*-her starter grader og omkreds-*/
+.omkredsgrad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    position: relative;
+    justify-content:space-around;
+    background-image: url('neptune1planet.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    align-items: center;
+}
+
+
+.surface1text {
+display:flex;
+flex-direction: column;
+justify-content:space-around;
+}
+/*-her slutter grader og omkreds-*/
+
+
+/*-her starter kasse 1-*/
+
+.kassetext {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+
+}
+
+.kasse1text {
+    font-size: xx-large;
+    display: flex;
+}
+
+.text {
+    font-size: 20px;
+    font-family: julius sans one;
+    flex: 1;
+    margin-left: 43%;
+}
+
+/*-her slutter kasse 1-*/
+
+/*-her starter måner og billede 2-*/
+
+.surface2text{
+    position: relative;
+}
+
+.maaner{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content:space-around;
+    position: relative;
+    align-items: center;
+    background-image: url('neptun2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+/*-her slutter måner og billede 2-*/
+
+/*-her starter atmosfære of sidste billede-*/
+
+.surface3text {
+    position: relative;
+}
+
+.atmos {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content:space-around;
+    position: relative;
+    align-items: center;
+    background-image: url('surface33.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: auto;
+    
+}
+
+
+.forbilledemars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content:space-around;
+    background-image: url(marsforbilled1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+   align-items: center;
+    color: #FCF3EC;
+}
+
+.aar {
+    font-size: 70px;
+}
+
+.dag {
+    font-size: 70px;
+}
+
+/*-her slutter forbilledet og indhold*/
+
+/*-her starter section 1 indhold*/
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content:space-around;
+    align-items: center;
+    background-image: url('marsbaggrund1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    align-items: center;
+    color: #FCF3EC;
+}
+
+.vertical {
+    border-left: 3px solid #3a1d1e;
+    height: 25vh;
+}
+
+.temp2 {
+    font-size: 50px;
+}
+
+.måne2 {
+    font-size: 55px;
+}
+/*-her slutter section 1 indhold*/
+
+/*-her starter MARS 1 indhold*/
+
+.mars1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content:space-around;
+    position: relative;
+    background-image: url(marsbilled2.jpg);
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    color: #FCF3EC;
+}
+
+.carbon {
+    font-size: 80px;
+}
+
+/*-her slutter MARS 1 indhold*/
+
+/*-her starter km afstand indhold*/
+
+.kmafstand {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    position: relative;
+    justify-content:space-around;
+    background-image: url('marsbaggrund1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    align-items: center;
+    color: #FCF3EC;
+}
+
+.verticalkm {
+    border-top: 5px solid #351a1a;
+}
+
+.kmogafstand {
+    border: 5px solid #351a1a;
+    height: fit-content;
+}
+
+.afstand {
+    font-size: 40px;
+    padding: 10px;
+    margin: 0;
+}
+
+.jorden {
+    font-size: 40px;
+    padding: 10px;
+    margin: 0;
+}
+
+/*-her slutte rkm afstandindhold*/
+
+
+/*-her starter textkm indhold*/
+
+.textkm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    position: relative;
+    justify-content:center;
+    background-image: url('marsbilled3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    align-items: center;
+    color: #FCF3EC;
+}
+
+.tusind {
+    font-size: 110px;
+    border-bottom: 2px solid #ffffff;
+    border-bottom-width: 5px;
+}
+
+.verticaltext {
+    border-bottom: 2px solid #ffffff;
+
+}
+
+.vandmm {
+    font-size: 40px; 
+    padding-left: 10px;  
+}
+
+.verticalmm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    position: relative;
+    justify-content:center;
+    margin-bottom: -11%;
+}
+
+/*-her slutter  textkm indhold*/
+
+
+/*-her starter vand indhold*/
+
+.min {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    position: relative;
+    justify-content:space-around;
+    background-image: url('marsbaggrund1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    align-items: center;
+    color: #FCF3EC;
+}
+
+.textmin {
+    font-size: 60px;
+}
+
+/*-her slutter vand indhold*/
+
+/*-her starter atmosfære indhold*/
+
+.atmosfære {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content: center;
+    background-image: url('marsbilled4.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    align-items: flex-end;
+    color: #000000;
+}
+
+.tien {
+    font-size: 200px;
+}
+
+.trykatmos {
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    margin-bottom: 34%;
+}
+/*-her slutter atmosfære of sidste billede-*/
+
+p {
+    font-family: Julius sans one;
+    font-size: 50px;
+}
+
+.jupiter_forbillede {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+
+
+.jupiter_tid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content:space-around;
+    background-image: url('pic1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    align-items: center;
+    }
+
+
+.jupiter_one_year {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+/*-her slutter tid, år og neptun billede 2-*/
+
+/*-her starter grader og omkreds-*/
+
+.jupiter_omkredsgrad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    position: relative;
+    justify-content:space-around;
+    background-image: url('pic2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    align-items: center;
+}
+
+
+
+.jupiter_surface1text {
+display:flex;
+flex-direction: column;
+justify-content:space-around;
+}
+/*-her slutter grader og omkreds-*/
+
+
+/*-her starter kasse 1-*/
+
+
+.jupiter_kassetext {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    color: white;
+    background-image: url('brown1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    opacity: 83%;
+    font-weight: 400;
+
+}
+
+
+.jupiter_kasse1text {
+    font-size: xx-large;
+    display: flex;
+}
+
+
+.jupiter_text {
+    font-size: 20px;
+    font-family: julius sans one;
+    flex: 1;
+    margin-left: 43%;
+    line-height: 1.5;
+}
+
+/*-her slutter kasse 1-*/
+
+/*-her starter måner og billede 2-*/
+
+
+.jupiter_surface2text{
+    position: relative;
+}
+
+
+.atmos{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content:space-around;
+    position: relative;
+    align-items: center;
+    background-image: url('pic3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+/*-her slutter måner og billede 2-*/
+
+/*-her starter atmosfære of sidste billede-*/
+
+
+.jupiter_surface3text {
+    position: relative;
+}
+
+.forskel {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content:space-around;
+    position: relative;
+    align-items: center;
+    background-image: url('https://cdn.domestika.org/c_fill,dpr_auto,f_auto,q_auto/v1590336172/content-items/004/675/695/JUPITER_3-original.jpg?1590336172');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: auto;
+    
+}
+
+
+
+/*-her slutter atmosfære of sidste billede-*/
+
+p {
+    font-family: Julius sans one;
+    font-size: 50px;
+    color: white;
+}
+
+
+
+/*   video   */
+
+#video-container {
+    position: relative;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  #play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hide the video initially */
+
+.container {
+    display: flex;
+    z-index: -3;
+    top: 10px;
+}
+
+
+
+
+
+.play-button{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
+.star {
+width: 200px;
+height: 200px;
+cursor: pointer;
+right: 70px;
+position: absolute;
+top: 550px;
+}
+
+#canvas {
+    opacity: 0.5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Sørg for, at canvas ligger bag andre elementer */
+    }
+
